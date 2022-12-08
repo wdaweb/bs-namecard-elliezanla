@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+  <style>
+    span {
+      display: block;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      font-family: 'Merriweather Sans', sans-serif;
+      ;
+    }
+
+    .container {
+      height: 100vh;
+
+    }
+
+    .card {
+      height: 100%;
+      box-shadow: 0px 0px 10px lightgrey;
+      border: none;
+    }
+
+    .card-header1 {
+      width: 100%;
+      height: 40%;
+    }
+
+    .card-body {
+      height: 60%;
+    }
+
+    .container .card img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center 0px;
+    }
+
+
+    @media(min-width:576px) {
+      .container {
+        height: 60vh;
+      }
+
+      .card {
+        width: 1000px;
+        box-shadow: 0px 0px 10px lightgrey;
+        border: none;
+      }
+
+      .card-header1 {
+        width: 400px;
+        height: 100%;
+      }
+
+      .card-body {
+        width: 600px;
+        height: 100%;
+        justify-content: center;
+      }
+
+      .container .card-header1 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+
+      .card-header1::before {
+        content: " ";
+        background-image: url(./images/陰影左下.png);
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        z-index: 1000;
+        left: -75px;
+        bottom: -50px;
+      }
+
+      .card-header1::after {
+        content: " ";
+        background-image: url(./images/陰影.png);
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        z-index: 1000;
+        right: -60px;
+        top: -85px;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="d-sm-flex justify-content-sm-center align-items-sm-center">
+  <div class="container d-sm-flex justify-content-center position-relative">
+    <div class="card flex-sm-row align-items-sm-center align-items-center position-relative">
+      <div>
+      </div>
+      <div class="card-header1">
+        <img src="./images/photo.jpg">
+      </div>
+      <div class="card-body d-flex justify-content-center flex-column mx-4 mb-4 mx-sm-5 mb-sm-auto">
+        <div class="card-text mt-sm-0 mb-5">
+          <h6>International Superstar</h6>
+          <h1 class="display-2 fw-bolder">Yuzhen Su</h1>
+          <h4>泰山職訓局美麗水姑娘</h4>
+        </div>
+        <div>
+          <span>住址: 24302 新北市泰山區貴子里致遠新村55之1號</span>
+          <span>電話: 0987-987987</span>
+          <span>E-mail: yuzhen87@gmail.com</span>
+          <span>粉絲後援會: https://zh-tw.facebook.com/hyunbinfanclub/</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
